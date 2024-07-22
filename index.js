@@ -1,7 +1,7 @@
 // grab the form
 const form = document.querySelector(`form`);
 
-//when the form is submitted we need an event listener
+//after submitting,  we need an event listener
 form.addEventListener (`submit`,  async (event) => {
     event.preventDefault();
 
@@ -19,12 +19,12 @@ form.addEventListener (`submit`,  async (event) => {
  //create a new list item
  const partyLI = document.createElement(`li`);
 
- //put party info in the list item
+ 
 partyLI.innterhtml = `
  <h4>${newPartyData.name}</h4
  
 `
-//grab the ul
+
 const ul = document.querySelector(`ul`);
 console.log(ul);
 
